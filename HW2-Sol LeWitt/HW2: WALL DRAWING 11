@@ -1,0 +1,49 @@
+//Sol LeWitt:WALL DRAWING 11
+//Desription:A wall divided horizontally and vertically into four equal parts. 
+//Within each part, three of the four kinds of lines are superimposed.
+
+//Elements:lines in 4 directions: horizontal, vertical, 45 diagonal right and 45 diagonal left
+//Step: Split the plane into grids(get the horizental&vertical lines); draw the diagonal lines 
+//in 4 steps(to get the four parts artificially)
+
+
+void setup() 
+{ 
+  size(600, 600); 
+  background(255); 
+  stroke(0); 
+  //smooth(); 
+} 
+
+void draw() 
+{ 
+  background(255); 
+  int maximum_radius = int(dist(0, height/2, width, 0)); 
+  int density = int(constrain(mouseX, 2, width)); 
+  line(0,width/2,width/2,0);                      //I found that the whole seems not so perfect without the diagonal(result from the 'for'statement)
+  line(0,width/2,width/2,width);
+  line(width/2,0,width,width/2);
+  line(width/2,width,width,width/2);              
+  
+  for(int i=density; i<=width; i+=density) {      //Step1: Split the plane into grids(get the horizental&vertical lines)
+    line(0, i, width, i); 
+    line(i, 0, i, height); 
+  }
+   for(int j=density; j<=width/2; j+=density){    //Step2:  draw the diagonal lines in 4 steps(to get the four parts artificially)
+      line(0, j, j, 0);
+      line(j, width/2,width/2,j);
+   }
+    for(int k=density; k<=width/2; k+=density){
+      line(width/2+k, 0,width,width/2-k);
+      line(width/2, k,width-k,width/2);
+    }
+    for(int h=density; h<=width/2; h+=density){
+      line(h,width/2,width/2,width-h);
+      line(0,width/2+h,width/2-h,width);
+    }
+    for(int m=density; m<=width/2; m+=density){
+      line(width/2,width/2+m,width/2+m,width/2);
+      line(width/2+m,width,width,width/2+m);
+    }
+saveFrame();                                    //save the pics to get the video by movie maker
+} 
