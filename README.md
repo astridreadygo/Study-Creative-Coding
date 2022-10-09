@@ -15,7 +15,7 @@ Projects in the curriculum Creative Coding of 2023 autumn
 ![screen-0067](https://user-images.githubusercontent.com/113407948/193443924-54258f36-be96-404f-9a83-e11a239454af.jpg)
 ![screen-0086](https://user-images.githubusercontent.com/113407948/193443925-a88e1fea-947a-4889-a41b-8650a8657e35.jpg)
 
-##HW3: The style of Mondrian
+##HW3: The style of Mondrian##
   Desription: Try to reproduce the style of Monderian
   
   Elements: 1)basic lines, the code of first line of blocks is from funprogramming from PROCESSING. And the next two lines are works I learned from the first one
