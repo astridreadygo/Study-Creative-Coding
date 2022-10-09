@@ -18,7 +18,12 @@ Projects in the curriculum Creative Coding of 2023 autumn
 ##HW3: The style of Mondrian
   Desription: Try to reproduce the style of Monderian
   
-  Elements: 1)basic lines; 2)rectangulars; 3)ellipses;
+  Elements: 1)basic lines, the code of first line of blocks is from funprogramming from PROCESSING. And the next two lines are works I learned from the first one
+  (https://funprogramming.org/18-Things-that-happen-sometimes.html);
+  
+  2)rectangulars, I try to make it interactive; 
+  
+  3)ellipses, I try to make it animated, since I found that in Mondrian's work Tree, ellipses can be a kind of basic element;
   
   Step: Choose a basic element;
         Choose the colors;
